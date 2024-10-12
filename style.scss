@@ -1,0 +1,71 @@
+@import "header";
+
+$primaryColor:purple;
+
+h1 {
+color: $primaryColor;
+}
+
+.box {
+    .list {
+        color: red;
+        .listItem {
+            
+            .link{
+                color: $primaryColor;
+            }
+        }
+    }
+}
+
+// mixin
+
+
+
+@mixin btn ($color) {
+    padding: 5px 15px;
+    border: 1px solid blue;
+    border-radius: 4px;
+    background-color: $color;
+    color: #fff;
+}
+
+@mixin borderRadius ($radius) {
+border-radius: $radius;
+}
+
+.btn {
+@include btn(red);
+@include borderRadius(10px)
+}
+
+.btn:hover {
+    background-color: darken(red,30%);
+  
+  }
+
+.card {
+    .cart-btn {
+        @include btn(green);
+        @include borderRadius(18px)
+
+    }
+}
+
+//inheritance
+
+.message{
+    padding: 10px;
+    color:#333
+}
+
+
+.sucess {
+    @extend .message;
+    background-color: green;
+}
+
+.error {
+    @extend .message;
+    background-color: red;
+}

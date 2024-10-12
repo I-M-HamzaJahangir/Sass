@@ -1,0 +1,49 @@
+header {
+  background-color: limegreen;
+}
+
+h1 {
+  color: purple;
+}
+
+.box .list {
+  color: red;
+}
+.box .list .listItem .link {
+  color: purple;
+}
+
+.btn {
+  padding: 5px 15px;
+  border: 1px solid blue;
+  border-radius: 4px;
+  background-color: red;
+  color: #fff;
+  border-radius: 10px;
+}
+
+.btn:hover {
+  background-color: #660000;
+}
+
+.card .cart-btn {
+  padding: 5px 15px;
+  border: 1px solid blue;
+  border-radius: 4px;
+  background-color: green;
+  color: #fff;
+  border-radius: 18px;
+}
+
+.message, .error, .sucess {
+  padding: 10px;
+  color: #333;
+}
+
+.sucess {
+  background-color: green;
+}
+
+.error {
+  background-color: red;
+}/*# sourceMappingURL=style.css.map */
